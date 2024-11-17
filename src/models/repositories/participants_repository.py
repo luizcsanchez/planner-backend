@@ -6,7 +6,7 @@ class ParticipantsRepository:
     def __init__(self, conn: Connection) -> None:
         self.__conn = conn
     
-    def resgistry_participant(self, participant_infos: Dict) -> None:
+    def registry_participant(self, participant_infos: Dict) -> None:
         cursor = self.__conn.cursor()
         cursor.execute(
             '''
